@@ -3,8 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rmtdevImg from "@/public/management.jpg";
+import eCommerce from "@/public/ecommerce.webp";
+import wordanalyticsImg from "@/public/mask-delection.jpeg";
 
 export const links = [
   {
@@ -16,70 +17,96 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+
+  {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Skills",
     hash: "#skills",
   },
+
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
+    name: "Interest",
+    hash: "#interest",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full Stack developer",
+    location: "Kurukshetra, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+       " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Mar-2022 -till data",
+  },
+
+] as const;
+
+export const educationData = [
+  {
+    title: "Master of Business application",
+    location: "Prayagraj, India",
+    description:
+       " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jun-2022 - till data",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Master of Computer application",
+    location: "Prayagraj, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+       " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
+    icon: React.createElement(LuGraduationCap),
+    date: "Dec-2020 - Jun-2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Barlous in Computer application",
+    location: "Prayagraj, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+       " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul-2017 - Sept-2020",
   },
+
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Child Support Application",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "It eliminate child support conflict and enjoy transparency while saving time and money.",
+    tags: ["React Js", "NextJS", "TypeScript", "NodeJS", "Express", "GraphQl","Hasura"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Warehouse Management",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Worked as Database Administrator to ensures the security of a database and integrity in the database",
+    tags: [ "MS SQL", "Power BI", "Microsoft Access"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "E-commerce Platform",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Designed and implemented an e-commerce platform where users can browse various products, add them to the cart, and make purchases securely",
+    tags: [ "React.js","Node.js + Express", "MySQL" , "Tailwind"],
+    imageUrl: eCommerce,
+  },
+  {
+    title: "Mask Detection",
+    description:
+      " This was a Group Project in which 5 people worked together. The project idea was simple that we need to develop a software which can help in detecting the mask so that later this project can be used for several purpose like Office security camera, etc..",
+    tags: ["Python", "Open CV", "Database (Image database)", "Keras JS", "TensorFlow" ],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -92,16 +119,15 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Express",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Ant Design",
   "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
-  "Express",
+  "Sql",
+  "MsSql",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
 ] as const;
+
+
