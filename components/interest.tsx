@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-// import { InterestData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { IoMdFootball } from "react-icons/io";
@@ -10,12 +9,13 @@ import { FaCamera } from "react-icons/fa";
 import { CgGym } from "react-icons/cg";
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { FaCarSide } from "react-icons/fa";
+
 export const InterestData = [
-  <FaCarSide />,
-  <IoMdFootball />,
-  <FaCamera />,
-  <CgGym />,
-  <FaHeadphonesAlt />
+  { component: <FaCarSide />, key: "car" },
+  { component: <IoMdFootball />, key: "football" },
+  { component: <FaCamera />, key: "camera" },
+  { component: <CgGym />, key: "gym" },
+  { component: <FaHeadphonesAlt />, key: "headphones" },
 ] as const;
 
 const fadeInAnimationVariants = {
@@ -46,7 +46,7 @@ export default function Interest() {
         {InterestData.map((interest, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
+            key={interest.key}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -55,7 +55,7 @@ export default function Interest() {
             }}
             custom={index}
           >
-            {interest}
+            {interest.component}
           </motion.li>
         ))}
       </ul>

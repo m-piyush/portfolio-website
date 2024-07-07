@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] my-8  text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] my-8  text-left leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,21 +19,25 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      I  completed my  <span className="font-medium">master's degree in computer applications</span>.
-      For a year and a half with cloud analogy, I fully immersed myself in the world of stack development,
-      where I focus on creating innovative web applications that prioritize providing an excellent user experience.
-      As for my skills, I have a range of expertise that includes  <span className="font-medium">HTML5, CSS3,JavaScript,
-      ReactJs ,NextJs, NodeJs. Express,  Mysql and Mssql .</span> My knowledge of Material UI, Ant Design, Stripe,
-      and Tailwind CSS allows me to create apps that follow design principles and meet user expectations.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        I’m a seasoned Senior Full Stack JavaScript Developer with over 2+ years of hands-on experience in crafting innovative software solutions across diverse industries. My passion lies in bringing ideas to life through the power of code and technology.
+        <br />
+        🚀 What I Bring to the Table:
+        <br />
+        In my journey, I’ve harnessed a wide array of programming tools such as Node.js, React.js, and Nest.js to architect and develop cutting-edge features and applications. My forte lies in not just writing code, but in understanding the pulse of end-users. I excel in analyzing customer feedback to conceptualize and implement feature enhancements that truly resonate.
+        <br />
+        🌐 My Project Portfolio Spans Across Industries:
+        I’ve proudly delivered impactful projects in various sectors, including:
+        <br />
+        🔹 Information Technologies
+        <br />
+        🔹 Retail
+        <br />
+        🔹 Banking
+        <br />
+        🔹 Hospitality
+        <br />
+        🔹 Healthcare, and beyond…
+        <br />
       </p>
     </motion.section>
   );
