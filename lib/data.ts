@@ -47,7 +47,7 @@ export const experiencesData = [
     description:
        " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
     icon: React.createElement(LuGraduationCap),
-    date: "Mar-2022 -till data",
+    date: "Mar-2022 - July 24",
   },
 
 ] as const;
@@ -59,7 +59,7 @@ export const educationData = [
     description:
        " Implemented and updated application modules under the direction of Senior Software Developers. Wrote and defined clean codes to achieve functional and sustainable web applications",
     icon: React.createElement(LuGraduationCap),
-    date: "Jun-2022 - till data",
+    date: "Jun-2022 - Aug-2024",
   },
   {
     title: "Master of Computer application",
