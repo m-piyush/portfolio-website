@@ -123,11 +123,11 @@ export const skillsData = [
   { name: "SQL", background: "/SQL.png" },     
   { name: "SQL server", background: "/SqlServer.png" },     
   { name: "MySql", background: "/MySql.png" },     
-  { name: "postgresSQL", background: "/postgresSQL.png" },  
+  { name: "PostgresSQL", background: "/postgresSQL.png" },  
   { name: "MongoDB", background: "/mongoDB.png" },  
   { name: "Ant Design", background: "/ant-d.png" },
   { name: "Tailwind Css", background: "/tailwind.png" },
-  { name: "shadcn ", background: "/shadcn.png" }, 
+  { name: "Shadcn ", background: "/shadcn.png" }, 
   { name: "Git", background: "/git.png" },
   { name: "Bitbucket", background: "/bitbucket.png" },
 ] as const;
