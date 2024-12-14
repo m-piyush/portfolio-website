@@ -9,13 +9,6 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { ReactTyped } from "react-typed";
-interface TypedProps {
-  strings: string[];
-  typeSpeed?: number;
-  backSpeed?: number;
-  loop?: boolean;
-}
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -69,17 +62,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500 text-5xl">Piyush Malviya  </span>this side</span>. <br></br>
-        <span className="font-bold">
-          <ReactTyped
-            strings={[
-              "I'm a Full Stack Developer with over 3 years of experience in building scalable web applications.",
-            ]}
-            typeSpeed={40}
-            backSpeed={30}
-            loop
-          />
-        </span>
+        <span className="font-bold">Hello, <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500 text-5xl">Piyush Malviya  </span>this side</span>. <br></br> I'm a{" "}
+        <span className="font-bold"> Full Stack Developer with over </span> with{" "}
+     <br/>   <span className="font-bold">3 years  of experience in building
+        scalable web applications.</span>
       </motion.h1>
 
       <motion.div

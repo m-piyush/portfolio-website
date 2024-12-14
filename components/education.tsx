@@ -29,6 +29,7 @@ export default function Education() {
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth animation
               }}
               contentArrowStyle={{
                 borderRight:
@@ -42,7 +43,9 @@ export default function Education() {
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
+                transition: "transform 0.3s ease", // Smooth animation for the icon
               }}
+              className="hover:shadow-lg hover:scale-105" // Tailwind utility for hover effect
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
@@ -52,6 +55,7 @@ export default function Education() {
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
+
       </VerticalTimeline>
     </section>
   );

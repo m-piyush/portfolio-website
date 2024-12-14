@@ -1,10 +1,10 @@
 "use client";
-
 import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -30,22 +30,30 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-4 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="flex flex-col justify-evenly items-center p-2 shadow-md border border-gray-300 dark:border-gray-600"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{
-              once: true,
-            }}
+            viewport={{ once: true }}
             custom={index}
+            whileHover={{ scale: 1.1 }} // Add hover zoom effect
+            transition={{ type: "spring", stiffness: 300 }} // Smooth transition for hover
           >
-            {skill}
+            <Image
+              src={skill.background}
+              alt={skill.name}
+              width={80}
+              height={80}
+              className="rounded-full"
+            />
+            <span className="mt-2 text-gray-800 dark:text-gray-200 ab">{skill.name}</span>
           </motion.li>
         ))}
+
       </ul>
     </section>
   );
